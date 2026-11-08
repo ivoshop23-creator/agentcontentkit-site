@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Content Check for Real Estate Agents | Agent Content Kit</title>
+<meta name="description" content="6 quick questions. See what's costing you listings on social, and get 10 free AI prompts.">
+<link rel="canonical" href="https://agentcontentkit.pro/check/">
+<meta property="og:title" content="60-second content check for real estate agents">
+<meta property="og:image" content="https://agentcontentkit.pro/guide-cover.jpg">
+<meta name="theme-color" content="#0F1B2D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F1B2D'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='800' font-size='30' text-anchor='middle' fill='%23D9432F'%3EAK%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+.q{max-width:640px;margin:0 auto;padding:28px 16px 60px}
+.bar{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin:6px 0 22px}
+.bar i{display:block;height:100%;width:0;background:var(--red);transition:width .3s}
+.step-n{font-size:13px;color:var(--muted);font-weight:600}
+.q h1{font-size:clamp(26px,6vw,36px);line-height:1.15;margin:8px 0 18px}
+.opt{display:block;width:100%;text-align:left;font:inherit;font-size:17px;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:16px 18px;margin:0 0 10px;cursor:pointer;color:var(--ink)}
+.opt:hover,.opt:focus-visible{border-color:var(--ink);outline:none}
+.fact{background:#0F1B2D;color:#fff;border-radius:14px;padding:14px 16px;margin:14px 0 0;font-size:15px}
+.fact b{color:#FFB4A8}
+.res{background:var(--card);border-radius:18px;padding:22px;border:1px solid var(--line)}
+.score{font-size:54px;font-weight:800;color:var(--red);line-height:1}
+.res ul{margin:14px 0 0 18px}.res li{margin:6px 0}
+.offer{margin-top:18px;background:#0F1B2D;color:#fff;border-radius:18px;padding:22px}
+.offer .btn{margin-top:12px}
+.price s{opacity:.6;margin-right:6px}
+</style>
+</head>
+<body>
+<header class="hero" style="padding-bottom:18px"><div class="wrap"><nav><a class="logo" href="/" style="opacity:1">Agent<b>Content</b>Kit</a><a href="https://www.instagram.com/agent.contentkit/" rel="noopener">@agent.contentkit</a></nav></div></header>
+
+<main class="q">
+  <div id="quiz">
+    <div class="step-n" id="sn"></div>
+    <div class="bar"><i id="pb"></i></div>
+    <h1 id="qt"></h1>
+    <div id="opts"></div>
+    <div class="fact" id="fact" hidden></div>
+  </div>
+
+  <div id="result" hidden>
+    <div class="res">
+      <div class="step-n">YOUR CONTENT SCORE</div>
+      <div class="score"><span id="sc"></span>/100</div>
+      <h1 id="rt" style="margin-top:10px"></h1>
+      <p id="rp"></p>
+      <ul id="fix"></ul>
+    </div>
+
+    <div class="res" style="margin-top:18px">
+      <h2 style="font-size:22px;margin-bottom:6px">Fix #1 today: get the 10 free prompts</h2>
+      <p class="sub" style="margin:0 0 12px">MLS description, posts, open house promo and a Reel script from one listing. PDF opens right away.</p>
+      <form class="form" data-source="quiz" data-download="/10-ai-prompts-for-listings.pdf" data-done="done-q" novalidate>
+        <input type="email" name="email" placeholder="Your email" autocomplete="email" required aria-label="Email">
+        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn" type="submit">Send me the prompts ↓</button>
+      </form>
+      <div class="done" id="done-q" hidden><b>Your download has started.</b> If it didn't, <a href="/10-ai-prompts-for-listings.pdf" download>click here</a>.</div>
+      <p class="form-msg" aria-live="polite"></p>
+    </div>
+
+    <div class="offer">
+      <div class="step-n" style="color:#FFB4A8">WANT THE WHOLE SYSTEM?</div>
+      <h2 style="font-size:24px;margin:6px 0 8px">54 prompts + a 30-day content calendar</h2>
+      <p>Buyer and seller leads, follow-ups, reviews, market updates, objection replies. One listing becomes a month of posts.</p>
+      <p class="price" style="margin-top:10px;font-size:20px;font-weight:800">$27</p>
+      <a class="btn" href="/kit/">See what's inside →</a>
+    </div>
+  </div>
+</main>
+
+<footer><div class="wrap">AI tools can make mistakes. Always check facts and follow Fair Housing law and your MLS rules. © 2026 Agent Content Kit. <a href="/privacy/">Privacy</a></div></footer>
+
+<script>
+var Q=[
+ {q:"How long does one listing description take you?",o:[["Under 15 minutes",3],["30 to 60 minutes",1],["Over an hour, I hate it",0]],
+  f:"Agents who use AI prompts write a listing description in about <b>5 minutes</b>."},
+ {q:"How often do you post on Instagram?",o:[["Every day",3],["A few times a week",2],["When I remember",0]],
+  f:"Buyers and sellers check your profile before they call. An empty feed reads as <b>\"not active\"</b>."},
+ {q:"What stops you posting more?",o:[["No ideas what to post",0],["No time to write",0],["I don't know what works",1],["Nothing, I post enough",3]],
+  f:"Most agents don't need more ideas. They need a <b>repeatable system</b> for one listing."},
+ {q:"How many posts do you get from one new listing?",o:[["1, the \"just listed\" post",0],["2 or 3",1],["A week of content",3]],
+  f:"One listing can fill <b>7+ posts</b>: tour, details, neighborhood, open house, price story, sold."},
+ {q:"Have you made a Reel in the last 30 days?",o:[["Yes, several",3],["One or two",2],["No",0]],
+  f:"Reels reach people who <b>don't follow you yet</b>. That is where new clients come from."},
+ {q:"Do you use ChatGPT or another AI for content?",o:[["Yes, it works well",3],["Tried it, it sounds robotic",1],["Not yet",0]],
+  f:"AI sounds robotic with vague prompts. With the right prompt it sounds <b>like you</b>."}
+];
+var i=0,s=0,ans=[];
+function show(){
+  var x=Q[i];document.getElementById('sn').textContent='QUESTION '+(i+1)+' OF '+Q.length;
+  document.getElementById('pb').style.width=(i/Q.length*100)+'%';
+  document.getElementById('qt').textContent=x.q;document.getElementById('fact').hidden=true;
+  var b=document.getElementById('opts');b.innerHTML='';
+  x.o.forEach(function(o){var e=document.createElement('button');e.className='opt';e.textContent=o[0];
+    e.onclick=function(){s+=o[1];ans.push(o[1]);var f=document.getElementById('fact');f.innerHTML='💡 '+x.f;f.hidden=false;
+      b.querySelectorAll('.opt').forEach(function(z){z.disabled=true;z.style.opacity=z===e?1:.45});
+      setTimeout(function(){i++;i<Q.length?show():done()},1600)};b.appendChild(e)});
+}
+function done(){
+  var sc=Math.round(s/18*100);document.getElementById('quiz').hidden=true;document.getElementById('result').hidden=false;
+  document.getElementById('sc').textContent=sc;
+  var t=sc<40?["Your content is costing you listings","Right now clients who check your profile don't see an active agent. Good news: this is the fastest thing to fix."]:
+        sc<70?["You post, but it takes too long","You have the habit. What's missing is a system, so one listing turns into a week of posts without the evenings."]:
+              ["You're ahead of most agents","Your base is strong. Prompts will save you hours and keep the quality the same."];
+  document.getElementById('rt').textContent=t[0];document.getElementById('rp').textContent=t[1];
+  var fx=[["Write listing descriptions in 5 minutes"],["Post 3 to 5 times a week without thinking"],["Use a ready list of what to post"],["Turn one listing into 7+ posts"],["Make one simple Reel a week"],["Use prompts that sound like you"]];
+  var u=document.getElementById('fix');ans.forEach(function(a,k){if(a<2)u.insertAdjacentHTML('beforeend','<li>'+fx[k][0]+'</li>')});
+  if(!u.children.length)u.insertAdjacentHTML('beforeend','<li>Save time on every listing with ready prompts</li>');
+  window.scrollTo(0,0);
+}
+show();
+</script>
+<script src="/assets/form.js"></script>
+</body>
+</html>
